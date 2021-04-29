@@ -16,6 +16,6 @@ routes = []
 #}
 
 if __name__== '__main__':
- file  = open("bru.csv","r")
+ file  = open("amazonas.csv","r")
  linea1= file.read()
  print(linea1)
