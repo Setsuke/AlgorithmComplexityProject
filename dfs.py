@@ -1,40 +1,56 @@
 import math
+import netwowkx
 #obtamos dfs por que es bactacking
 #Listas de adyacencia para cada nodo
-adj = [[] for _ in rage(len(cities))]
-i=-1
-vis = {}
-dis= {}
 
-def valid(string:tour,float:c):
+#def almacenado(cities):
+
+
+#def valid(string:tour,float:c):
     #que coja la menor distancia
     #que no agarre la distancia de la que viene
-    cities[r][c]
+#    cities[r][c]
+
+#minimun = math.inf
+def build_path(cities):
+    adj = [[] for _ in range(len(cities))]
+    i=-1
+    vis = {}
+    dis= {}
+    for origen in cities.keys():
+        a = origen
+        vis[a] =False
+        dis[a]=math.inf
+        i = 1+1
+        for destino in cities[origen].keys():
+            b = destino
+            c = cities[origen][destino]
+            adj[i].append((b,c))
+   
+
+    c= start
+    def dfs(n: int, adj: list):
+    vis[c] = True
+    for origen in adj[]:
+        #estoy extrayendo en la poscion v
+
+        
+    #    for 
 
 
 
 
 
+ #marco como visitado
+ #a los que no he visitado lazo DFS
+ #el key a donde va y lo almaceno
+ #saco el peso y lo almacen
+ # for origen in cities.keys():
+ #
+ #     vis[origen] = True
+ #     for destino in cities[origen].key():
 
-
-minimun = math.inf
-def dfs():
-  #marco como visitado
-  #a los que no he visitado lazo DFS
-  #el key a donde va y lo almaceno
-  #saco el peso y lo almacen
-  for origen in cities.keys():
-      vis[origen] = True
-      for destino in cities[origen].key():
-          if valid():
-  #index de carlos
-            
-
-
-
-            if cities[origen][destino] < minimun:
-                minimun = cities[origen][destino]
-   return minimun              
+ #  return minimun              
 
 
 
@@ -54,7 +70,8 @@ if __name__=='__main__':
         'Z': {'BA': 120, 'BE': 85, 'RV': 91}
     }
 
-    dfs()
+    build_path(cities)
+ 
 
 
 
