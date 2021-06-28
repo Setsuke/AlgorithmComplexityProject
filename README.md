@@ -1,5 +1,5 @@
 # AlgorithmComplexityProject
-## Entrega Trabajo Parcial en el file: TP
+  ## Entrega Final  en el file: Tf
 # Members:
 * William Angulo Valle
 * Sergio Alva Rosales
