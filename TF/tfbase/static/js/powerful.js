@@ -4,7 +4,7 @@
 	// Data
 
 	const urldptos = "data/d.json";
-	const urlpath  = "peru1"
+	const urlpath  = "peru3"
 	const datapath = await d3.json(urlpath);
 	const dptos    = await d3.json(urldptos);
 

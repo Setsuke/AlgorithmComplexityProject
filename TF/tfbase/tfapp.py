@@ -28,6 +28,17 @@ def peru1():
     return app.response_class(response=algorithm.peru1(),
                               status=200,
                               mimetype='application/json')
+@app.route("/peru2")
+def peru2():
+    return app.response_class(response=algorithm.peru2(),
+                              status=200,
+                              mimetype='application/json')
+@app.route("/peru3")
+def peru3():
+    return app.response_class(response=algorithm.peru3(),
+                              status=200,
+                              mimetype='application/json')
+
 
 # vim: set tabstop=2:softtabstop=2:shiftwidth=2:noexpandtab
 
